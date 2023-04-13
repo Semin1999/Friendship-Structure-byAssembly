@@ -182,7 +182,3 @@ struct FriendNode {
 Create a linked-list structure with FriendNodes in the heap and return a reference to the head of the linked list, i.e., the first element.
 
 The first attribute in *FriendNode* is the name of the person who is a distant friend. The second attribute is a reference to (or address of) the next distant friend node. In the example network shown above, suppose the name of person node *p1* is passed as argument to *get_distant_friends* along with the network address. In this case, the function should return a linked list of friend nodes in *$v0* such that *$v0* has a reference to a FriendNode *fnode1*, which has the name for *p4* and a reference to a FriendNode *fnode2*. The FriendNode *fnode2* has the name of *p5* and a reference to *fnode3*. FriendNode *fnode3* has the name of *p6* and null as the reference to the next element. The null element indicates the end of the linked list. The elements in the linked list do not have to be linked in the same order as specified in the current example. For instance, the linked list returned could also be linked as *p5 -> p4 -> p6*.
-
-
-어셈블리 데이터 구조, 동적 메모리 할당
-
